@@ -268,11 +268,55 @@ $ git commit -m "usuniety Plik_1.txt"
 
 student@830KIS039 MINGW64 ~/Documents/ZPI (master)
 $ gitlog
-bash: gitlog: command not found
+dadaje raport
 
-student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[main 32baebf] dadaje raport
+ 1 file changed, 294 insertions(+)
+ create mode 100644 raport.txt
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (main)
+$ gitstatus
+bash: gitstatus: command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (main)
 $ git log
-commit 3098881770a7a3cd43116a45dcba7931b90e1d38 (HEAD -> master)
+commit 32baebfa84d2be8c229acdaf40f51410f1b6166c (HEAD -> main)
+Author: Dawid <rau24dawkos9918@student.polsl.pl>
+Date:   Sat Jan 18 17:00:15 2025 +0100
+
+    dadaje raport
+
+commit 3098881770a7a3cd43116a45dcba7931b90e1d38 (origin/main)
 Author: Dawid <rau24dawkos9918@student.polsl.pl>
 Date:   Sat Jan 18 16:43:08 2025 +0100
 
@@ -290,5 +334,17 @@ Date:   Sat Jan 18 16:28:27 2025 +0100
 
     Stworzenie 3 plikow
 
-student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+student@830KIS039 MINGW64 ~/Documents/ZPI (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.52 KiB | 1.52 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DAwidrau24/ZPI.git
+   3098881..32baebf  main -> main
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (main)
 $
