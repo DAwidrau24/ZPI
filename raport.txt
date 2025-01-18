@@ -1,0 +1,294 @@
+
+student@830KIS039 MINGW64 ~/Documents/ZPI
+$ git config --global user.name Dawid
+
+student@830KIS039 MINGW64 ~/Documents/ZPI
+$ git config --global user.email rau24dawkos9918@student.polsl.pl
+
+student@830KIS039 MINGW64 ~/Documents/ZPI
+$ git config --global --list
+user.name=Dawid
+user.email=rau24dawkos9918@student.polsl.pl
+
+student@830KIS039 MINGW64 ~/Documents/ZPI
+$ git init
+Initialized empty Git repository in C:/Users/student/Documents/ZPI/.git/
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ZPI_1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add ZPI_1.txt
+bash: $'\302\201git': command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ZPI_1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add ZPI_1.txt
+bash: $'\302\201git': command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add
+bash: $'\302\201git': command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ info
+bash: info: command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add ZPI_1.txt
+bash: $'\302\201git': command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git info
+git: 'info' is not a git command. See 'git --help'.
+
+The most similar commands are
+        init
+        mailinfo
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Plik_1.txt
+        ZPI_1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add Plik_1.txt
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add ZPI_1.txt
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plik_1.txt
+        new file:   ZPI_1.txt
+
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plik_1.txt
+        new file:   ZPI_1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ZPI_1.txt
+
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plik_1.txt
+        new file:   ZPI_1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ZPI_1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        qwe.txt
+
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add *
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Plik_1.txt
+        new file:   ZPI_1.txt
+        new file:   qwe.txt
+
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git commit -m
+error: switch `m' requires a value
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git commit -m "Stworzenie 3 plikow"
+[master (root-commit) 2539c76] Stworzenie 3 plikow
+ 3 files changed, 4 insertions(+)
+ create mode 100644 Plik_1.txt
+ create mode 100644 ZPI_1.txt
+ create mode 100644 qwe.txt
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git show
+commit 2539c76b6a7e118f3c67aad15cdef776fcb8b07a (HEAD -> master)
+Author: Dawid <rau24dawkos9918@student.polsl.pl>
+Date:   Sat Jan 18 16:28:27 2025 +0100
+
+    Stworzenie 3 plikow
+
+diff --git a/Plik_1.txt b/Plik_1.txt
+new file mode 100644
+index 0000000..81403e4
+--- /dev/null
++++ b/Plik_1.txt
+@@ -0,0 +1 @@
+komentarz wymagany do pliku z Folder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[master 23ad4d9] komentarz wymagany do pliku z Folder
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Folder/git.txt
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ gitshow
+bash: gitshow: command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git show
+commit 23ad4d9414bd91cfc897fd7a10d58268ae81c410 (HEAD -> master)
+Author: Dawid <rau24dawkos9918@student.polsl.pl>
+Date:   Sat Jan 18 16:35:25 2025 +0100
+
+    komentarz wymagany do pliku z Folder
+
+diff --git a/Folder/git.txt b/Folder/git.txt
+new file mode 100644
+index 0000000..aab74ac
+--- /dev/null
++++ b/Folder/git.txt
+@@ -0,0 +1 @@
++ak.jsng;alrnglwegms'E/;GMGHM/EQRMHG/EMW/
+\ No newline at end of file
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git commit
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Plik_1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git add Plik_1.txt
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Plik_1.txt
+
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git commit -m "usuniety Plik_1.txt"
+[master 3098881] usuniety Plik_1.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 Plik_1.txt
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ gitlog
+bash: gitlog: command not found
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$ git log
+commit 3098881770a7a3cd43116a45dcba7931b90e1d38 (HEAD -> master)
+Author: Dawid <rau24dawkos9918@student.polsl.pl>
+Date:   Sat Jan 18 16:43:08 2025 +0100
+
+    usuniety Plik_1.txt
+
+commit 23ad4d9414bd91cfc897fd7a10d58268ae81c410
+Author: Dawid <rau24dawkos9918@student.polsl.pl>
+Date:   Sat Jan 18 16:35:25 2025 +0100
+
+    komentarz wymagany do pliku z Folder
+
+commit 2539c76b6a7e118f3c67aad15cdef776fcb8b07a
+Author: Dawid <rau24dawkos9918@student.polsl.pl>
+Date:   Sat Jan 18 16:28:27 2025 +0100
+
+    Stworzenie 3 plikow
+
+student@830KIS039 MINGW64 ~/Documents/ZPI (master)
+$
